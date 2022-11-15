@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XtraReportsLayoutSerializer SerializerVersion="21.2.4.0" Ref="1" ControlType="DevExpress.XtraReports.UI.XtraReport, DevExpress.XtraReports.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Name="XtraReport1" ScriptsSource="&#xD;&#xA;private void Detail_BeforePrint(object sender, System.Drawing.Printing.PrintEventArgs e) {&#xD;&#xA;    Detail.BackColor = Color.Red;&#xD;&#xA;    Detail.ForeColor = Color.Black;&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;private void Detail_AfterPrint(object sender, System.EventArgs e) {&#xD;&#xA;    Detail.BackColor = Color.Blue;&#xD;&#xA;    Detail.ForeColor = Color.White;&#xD;&#xA;}&#xD;&#xA;" Margins="100, 96, 100, 100" PageWidth="850" PageHeight="1100" Version="21.2" DataMember="NIF_Empresa" DataSource="#Ref-0" Font="Arial, 9.75pt">
+  <Extensions>
+    <Item1 Ref="2" Key="VSReportExtInfo" Value=".vsrepx" />
+  </Extensions>
+  <Bands>
+    <Item1 Ref="3" ControlType="TopMarginBand" Name="TopMargin" />
+    <Item2 Ref="4" ControlType="BottomMarginBand" Name="BottomMargin" />
+    <Item3 Ref="5" ControlType="DetailBand" Name="Detail">
+      <Scripts Ref="6" OnAfterPrint="Detail_AfterPrint" OnBeforePrint="Detail_BeforePrint" />
+      <Controls>
+        <Item1 Ref="7" ControlType="XRLabel" Name="label13" Multiline="true" Text="label13" TextAlignment="TopRight" SizeF="44.833374,25.5000057" LocationFloat="553.3333,0" Padding="2,2,0,0,96">
+          <ExpressionBindings>
+            <Item1 Ref="8" EventName="BeforePrint" PropertyName="Text" Expression="[Fax]" />
+          </ExpressionBindings>
+        </Item1>
+        <Item2 Ref="9" ControlType="XRLabel" Name="label12" Multiline="true" Text="label12" SizeF="55.833374,25.5" LocationFloat="598.1667,0" Padding="2,2,0,0,96">
+          <ExpressionBindings>
+            <Item1 Ref="10" EventName="BeforePrint" PropertyName="Text" Expression="[Imagem_URL]" />
+          </ExpressionBindings>
+        </Item2>
+        <Item3 Ref="11" ControlType="XRLabel" Name="label11" Multiline="true" Text="label11" SizeF="50.00003,25.5" LocationFloat="503.333344,0" Padding="2,2,0,0,96">
+          <ExpressionBindings>
+            <Item1 Ref="12" EventName="BeforePrint" PropertyName="Text" Expression="[Website]" />
+          </ExpressionBindings>
+        </Item3>
+        <Item4 Ref="13" ControlType="XRLabel" Name="label10" Multiline="true" Text="label10" TextAlignment="TopRight" SizeF="50.00003,25.5" LocationFloat="453.333344,0" Padding="2,2,0,0,96">
+          <ExpressionBindings>
+            <Item1 Ref="14" EventName="BeforePrint" PropertyName="Text" Expression="[Phone]" />
+          </ExpressionBindings>
+        </Item4>
+        <Item5 Ref="15" ControlType="XRLabel" Name="label9" Multiline="true" Text="label9" SizeF="50.8333435,25.5000057" LocationFloat="402.5,0" Padding="2,2,0,0,96">
+          <ExpressionBindings>
+            <Item1 Ref="16" EventName="BeforePrint" PropertyName="Text" Expression="[Email]" />
+          </ExpressionBindings>
+        </Item5>
+        <Item6 Ref="17" ControlType="XRLabel" Name="label8" Multiline="true" Text="label8" SizeF="50,25.5000057" LocationFloat="352.5,0" Padding="2,2,0,0,96">
+          <ExpressionBindings>
+            <Item1 Ref="18" EventName="BeforePrint" PropertyName="Text" Expression="[Parish]" />
+          </ExpressionBindings>
+        </Item6>
+        <Item7 Ref="19" ControlType="XRLabel" Name="label7" Multiline="true" Text="label7" SizeF="50,25.5" LocationFloat="302.5,0" Padding="2,2,0,0,96">
+          <ExpressionBindings>
+            <Item1 Ref="20" EventName="BeforePrint" PropertyName="Text" Expression="[County]" />
+          </ExpressionBindings>
+        </Item7>
+        <Item8 Ref="21" ControlType="XRLabel" Name="label6" Multiline="true" Text="label6" SizeF="50,25.5000057" LocationFloat="252.5,0" Padding="2,2,0,0,96">
+          <ExpressionBindings>
+            <Item1 Ref="22" EventName="BeforePrint" PropertyName="Text" Expression="[Region]" />
+          </ExpressionBindings>
+        </Item8>
+        <Item9 Ref="23" ControlType="XRLabel" Name="label5" Multiline="true" Text="label5" TextAlignment="TopRight" SizeF="50,25.5" LocationFloat="202.5,0" Padding="2,2,0,0,96">
+          <ExpressionBindings>
+            <Item1 Ref="24" EventName="BeforePrint" PropertyName="Text" Expression="[PC3]" />
+          </ExpressionBindings>
+        </Item9>
+        <Item10 Ref="25" ControlType="XRLabel" Name="label4" Multiline="true" Text="label4" TextAlignment="TopRight" SizeF="49.16667,25.5000057" LocationFloat="153.333328,0" Padding="2,2,0,0,96">
+          <ExpressionBindings>
+            <Item1 Ref="26" EventName="BeforePrint" PropertyName="Text" Expression="[PC4]" />
+          </ExpressionBindings>
+        </Item10>
+        <Item11 Ref="27" ControlType="XRLabel" Name="label3" Multiline="true" Text="label3" SizeF="53.33333,25.5000057" LocationFloat="100,0" Padding="2,2,0,0,96">
+          <ExpressionBindings>
+            <Item1 Ref="28" EventName="BeforePrint" PropertyName="Text" Expression="[Address]" />
+          </ExpressionBindings>
+        </Item11>
+        <Item12 Ref="29" ControlType="XRLabel" Name="label2" Multiline="true" Text="label2" SizeF="50.8333321,25.5000057" LocationFloat="49.1666679,0" Padding="2,2,0,0,96">
+          <ExpressionBindings>
+            <Item1 Ref="30" EventName="BeforePrint" PropertyName="Text" Expression="[Name]" />
+          </ExpressionBindings>
+        </Item12>
+        <Item13 Ref="31" ControlType="XRLabel" Name="label1" Multiline="true" Text="label1" TextAlignment="TopRight" SizeF="49.1666679,25.5" LocationFloat="0,0" Padding="2,2,0,0,96">
+          <ExpressionBindings>
+            <Item1 Ref="32" EventName="BeforePrint" PropertyName="Text" Expression="[NIF]" />
+          </ExpressionBindings>
+        </Item13>
+      </Controls>
+    </Item3>
+  </Bands>
+  <ComponentStorage>
+    <Item1 Ref="0" ObjectType="DevExpress.DataAccess.Sql.SqlDataSource,DevExpress.DataAccess.v21.2" Name="sqlDataSource1" Base64="PFNxbERhdGFTb3VyY2UgTmFtZT0ic3FsRGF0YVNvdXJjZTEiPjxDb25uZWN0aW9uIE5hbWU9Ik5JRkRCIiBGcm9tQXBwQ29uZmlnPSJ0cnVlIiAvPjxRdWVyeSBUeXBlPSJTZWxlY3RRdWVyeSIgTmFtZT0iTklGX0VtcHJlc2EiPjxUYWJsZXM+PFRhYmxlIE5hbWU9Ik5JRl9FbXByZXNhIiAvPjwvVGFibGVzPjxDb2x1bW5zPjxDb2x1bW4gVGFibGU9Ik5JRl9FbXByZXNhIiBOYW1lPSJOSUYiIC8+PENvbHVtbiBUYWJsZT0iTklGX0VtcHJlc2EiIE5hbWU9Ik5hbWUiIC8+PENvbHVtbiBUYWJsZT0iTklGX0VtcHJlc2EiIE5hbWU9IkFkZHJlc3MiIC8+PENvbHVtbiBUYWJsZT0iTklGX0VtcHJlc2EiIE5hbWU9IlBDNCIgLz48Q29sdW1uIFRhYmxlPSJOSUZfRW1wcmVzYSIgTmFtZT0iUEMzIiAvPjxDb2x1bW4gVGFibGU9Ik5JRl9FbXByZXNhIiBOYW1lPSJSZWdpb24iIC8+PENvbHVtbiBUYWJsZT0iTklGX0VtcHJlc2EiIE5hbWU9IkNvdW50eSIgLz48Q29sdW1uIFRhYmxlPSJOSUZfRW1wcmVzYSIgTmFtZT0iUGFyaXNoIiAvPjxDb2x1bW4gVGFibGU9Ik5JRl9FbXByZXNhIiBOYW1lPSJFbWFpbCIgLz48Q29sdW1uIFRhYmxlPSJOSUZfRW1wcmVzYSIgTmFtZT0iUGhvbmUiIC8+PENvbHVtbiBUYWJsZT0iTklGX0VtcHJlc2EiIE5hbWU9IldlYnNpdGUiIC8+PENvbHVtbiBUYWJsZT0iTklGX0VtcHJlc2EiIE5hbWU9IkZheCIgLz48Q29sdW1uIFRhYmxlPSJOSUZfRW1wcmVzYSIgTmFtZT0iSW1hZ2VtX1VSTCIgLz48L0NvbHVtbnM+PC9RdWVyeT48UmVzdWx0U2NoZW1hPjxEYXRhU2V0IE5hbWU9InNxbERhdGFTb3VyY2UxIj48VmlldyBOYW1lPSJOSUZfRW1wcmVzYSI+PEZpZWxkIE5hbWU9Ik5JRiIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9Ik5hbWUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQWRkcmVzcyIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQQzQiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJQQzMiIFR5cGU9IkludDMyIiAvPjxGaWVsZCBOYW1lPSJSZWdpb24iIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iQ291bnR5IiBUeXBlPSJTdHJpbmciIC8+PEZpZWxkIE5hbWU9IlBhcmlzaCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJFbWFpbCIgVHlwZT0iU3RyaW5nIiAvPjxGaWVsZCBOYW1lPSJQaG9uZSIgVHlwZT0iSW50MzIiIC8+PEZpZWxkIE5hbWU9IldlYnNpdGUiIFR5cGU9IlN0cmluZyIgLz48RmllbGQgTmFtZT0iRmF4IiBUeXBlPSJJbnQzMiIgLz48RmllbGQgTmFtZT0iSW1hZ2VtX1VSTCIgVHlwZT0iU3RyaW5nIiAvPjwvVmlldz48L0RhdGFTZXQ+PC9SZXN1bHRTY2hlbWE+PENvbm5lY3Rpb25PcHRpb25zIENsb3NlQ29ubmVjdGlvbj0idHJ1ZSIgLz48L1NxbERhdGFTb3VyY2U+" />
+  </ComponentStorage>
+</XtraReportsLayoutSerializer>
